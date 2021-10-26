@@ -1,0 +1,63 @@
+<script src = "https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script>
+    // 여기 안에 예제 코드 넣기
+   
+    /* axios.get('https://www.zerocho.com/api/get')
+.then((result) => {
+    console.log(result);
+    console.log(result.data);
+})
+.catch((error) => {
+    console.error(error);
+});*/
+
+/*
+(async () => { // 즉시 실행을 위해 괄호로 감싸서 실행
+    try{
+        const result = await axios.get( 'https://www.zerocho.com/api/get');
+        console.log(result);
+        console.log(result.data);
+    } catch(error){
+        console.error(error);
+    }
+})();*/
+
+/*(async () => {
+    try {
+        const result = await axios.post('https://www.zerocho.com/api/post/json', {
+            name : 'zerocho',
+            birth : 1994,
+        });
+        console.log(result);
+        console.log(result.data);
+    } catch(error){
+        console.error(error);
+    }
+})();*/
+
+/*(async () => { // formdata로 데이터 보내는 방법
+    try{
+        const formData = new FormData();
+        formData.append ('name','zerocho');
+        formData.append('birth',1994);
+        const result = await axios.post('https://www.zerocho.com/api/post/formdata',formData);
+        console.log(result);
+        console.log(result.data);
+    }
+    catch(error){
+        console.error(error);
+    }
+})();
+*/
+(async () =>{
+    try{
+        const result = await axios.get(`https://www.zerocho.com/api/search/${encodeURIComponent('노드')}`);
+        console.log(result);
+        console.log(result.data);
+    } catch(error){
+        console.error(error);
+    }
+})();
+
+</script>
