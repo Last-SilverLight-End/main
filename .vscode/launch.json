@@ -12,7 +12,11 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
+<<<<<<< HEAD
             "program": "${workspaceFolder}\\path.js"
+=======
+            "program": "${workspaceFolder}\\vars\\worker_threads.js"
+>>>>>>> d69f11a870b78152aa633952c530193ef2f28963
         }
     ]
     
