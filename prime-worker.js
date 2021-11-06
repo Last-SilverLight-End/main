@@ -54,5 +54,5 @@ if(isMainThread){
     }
 } else {
     findPrimes(workerData.start, workerData.range);
-    parentPort.postMessage(primes);
+    parentPort.postMessage(primes);git 
 }

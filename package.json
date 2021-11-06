@@ -1,0 +1,28 @@
+{
+  "name": "npmpractice",
+  "version": "0.0.1",
+  "description": "hello package.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"error : no test specified\" && exit 1"
+  },
+  "author": "zerocho",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Last-SilverLight-End/main.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "bugs": {
+    "url": "https://github.com/Last-SilverLight-End/main/issues"
+  },
+  "homepage": "https://github.com/Last-SilverLight-End/main#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
