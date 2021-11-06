@@ -9,3 +9,11 @@ http.createServer((req,res) => {
     console.log('8080번 포트에서 서버 대기 중입니다!');
 });
 
+/*import React from "react";
+
+function App() {
+  return( <div>TEST</div>
+  );
+};
+
+export default App;*/
