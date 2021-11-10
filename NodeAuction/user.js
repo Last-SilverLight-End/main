@@ -23,6 +23,17 @@ module.exports = class User extends Sequelize.Model{
             },
         },{
             sequelize,
-        })
+            timestamps : true,
+            paranodi:true,
+            modelName : 'User',
+            tableName : 'users',
+            charset : 'utf8',
+            collate : 'utf8_general_ci',
+
+        });
     }
-}
+
+    static associate(db){
+        db.User.hasMany(db.Auction);
+    }
+};
