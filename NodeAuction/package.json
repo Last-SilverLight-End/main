@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Last-SilverLight-End/main/issues"
   },
-  "homepage": "https://github.com/Last-SilverLight-End/main#readme"
+  "homepage": "https://github.com/Last-SilverLight-End/main#readme",
+  "dependencies": {
+    "mysql2": "^2.3.3-rc.0",
+    "sequelize": "^6.9.0",
+    "sequelize-cli": "^6.3.0"
+  }
 }
