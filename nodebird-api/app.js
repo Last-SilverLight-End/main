@@ -2,9 +2,9 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const passport = require('passport');
-const passport = reuqire('morgan');
+const morgan = require('morgan');
 const session = require('express-session');
-const nunjunks = require('nunjucks');
+const nunjucks = require('nunjucks');
 const dotenv = require('dotenv');
 
 dotenv.config();
@@ -57,3 +57,11 @@ app.use((req,res,next) => {
     next(error);
 });
 
+app.use((err, req, res, next) => {
+    res.locals.message = err.message;
+    res.locals.error = process.env.NODE_ENV !== 'production' ? err : {};
+ }   );
+
+ app.listen(app.get('port'), () =>{
+        console,log(app.get('port'), '빈 포트에서 대기중');
+ })
