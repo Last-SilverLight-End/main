@@ -1,5 +1,5 @@
 {
-  "name": "npmpractice",
+  "name": "node-auction",
   "version": "0.0.1",
   "description": "hello package.json",
   "main": "index.js",
@@ -30,6 +30,7 @@
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.14"
+    "nodemon": "^2.0.14",
+    "test": "^0.6.0"
   }
 }
