@@ -25,3 +25,6 @@ Good.associate(db);
 Auction.associate(db);
 
 module.exports = db;
+
+// db 만들고 push
+
